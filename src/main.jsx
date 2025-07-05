@@ -1,10 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
 import App from './App.jsx'
+import './style.css'
+import { background } from 'storybook/internal/theming'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <App style={{ background: "#ff0000" }} />
   </StrictMode>,
 )
