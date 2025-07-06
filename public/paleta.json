@@ -1,0 +1,24 @@
+{
+  "colors": [
+    {
+      "name": "Amarelo Claro",
+      "hex": "#FCE96C"
+    },
+    {
+      "name": "Dourado Médio",
+      "hex": "#F4C93C"
+    },
+    {
+      "name": "Laranja Dourado",
+      "hex": "#E39A3B"
+    },
+    {
+      "name": "Dourado Intenso",
+      "hex": "#F4C53A"
+    },
+    {
+      "name": "Branco",
+      "hex": "#FFFFFF"
+    }
+  ]
+}

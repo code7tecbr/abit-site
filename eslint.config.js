@@ -27,6 +27,8 @@ export default defineConfig([
     },
     rules: {
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      'max-len': ['error', { code: 100 }],
+      'quotes': ['error', 'double'],
     },
   },
 ])

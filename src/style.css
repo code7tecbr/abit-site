@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-yellow-light: #FCE96C;
+  --color-gold-medium: #F4C93C;
+  --color-orange-gold: #E39A3B;
+  --color-gold-deep: #F4C53A;
+  --color-white: #FFFFFF;
+}

@@ -6,6 +6,6 @@ import { background } from 'storybook/internal/theming'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App style={{ background: "#ff0000" }} />
+    <App />
   </StrictMode>,
 )
