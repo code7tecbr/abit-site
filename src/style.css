@@ -9,3 +9,9 @@
   --color-gold-deep: #F4C53A;
   --color-white: #FFFFFF;
 }
+
+.banner-image {
+  width: 100% !important;
+  height: 80vh!important;
+  overflow: hidden;
+}
