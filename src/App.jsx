@@ -5,11 +5,11 @@ import AppFooter from './footer'
 
 function App() {
   return (
-    <div className="bg-black text-white w-100 p-3">
+    <div className="bg-black text-white w-100">
       <div>
         <AppHeader />
       </div>
-      <div className="h-100">
+      <div className="h-100 w-100">
         <AppBody />
       </div>
       <div>

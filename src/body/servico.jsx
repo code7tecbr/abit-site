@@ -16,7 +16,7 @@ export default function Servico() {
   const divProjetoArquitetonico = DivIcone(<IconEngenheiro />, "PROJETOS", "ARQUITETÔNICOS");
 
   return (
-    <div className='flex flex-col gap-3 items-center justify-center' >  
+    <div className='flex flex-col gap-3 items-center justify-center p-5' id="servicos">  
       <h1 className="text-2xl font-bold" style={{ color: "var(--color-gold-deep)" }}> SERVIÇOS</h1>
       <div className="flex flex-col gap-3 w-full h-full items-center justify-center">
         <div className="flex flex-row gap-3 w-full h-full items-center justify-between p-10">
