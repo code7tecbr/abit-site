@@ -1,19 +1,20 @@
+import { Lightbulb, Star, Target } from "lucide-react";
 import type { CompanyValue } from "./types";
 
 export const valuesData: CompanyValue[] = [
   {
     id: "1",
     title: "INOVAÇÃO",
-    icon: "💡",
+    icon: Lightbulb,
   },
   {
     id: "2",
     title: "EXCELÊNCIA",
-    icon: "⭐",
+    icon: Star,
   },
   {
     id: "3",
     title: "PROFISSIONALISMO",
-    icon: "🎯",
+    icon: Target,
   },
 ];

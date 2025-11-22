@@ -1,0 +1,12 @@
+# Claude Code - Contexto Local (não versionado)
+# Estes arquivos contêm dados específicos da sessão de desenvolvimento
+
+checkpoints/
+screenshots/
+task-requests/
+
+# Estrutura versionada (NÃO ignorar):
+# commands/      - Symlinks para agentes globais
+# README.md      - Documentação da configuração
+# docs/          - Documentação do projeto
+# skills/        - Skills customizadas do projeto

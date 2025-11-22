@@ -1,5 +1,8 @@
+"use client";
+
 import { Container, Button } from "@/shared/ui";
 import { siteConfig } from "@/shared/config";
+import IconChat from "@/shared/images/whatsapp.png";
 
 export function Hero() {
   return (
@@ -57,11 +60,11 @@ export function Hero() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-[#FFD700] rounded-full flex items-start justify-center p-2">
             <div className="w-1 h-2 bg-[#FFD700] rounded-full" />
           </div>
-        </div>
+        </div> */}
       </Container>
 
       {/* WhatsApp Floating Button */}
@@ -72,7 +75,7 @@ export function Hero() {
         className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center text-white text-3xl shadow-lg hover:scale-110 transition-transform"
         aria-label="WhatsApp"
       >
-        💬
+        <img src={IconChat.src} alt="WhatsApp" className="w-10 h-10 " />
       </a>
     </section>
   );

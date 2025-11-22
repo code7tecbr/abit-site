@@ -6,9 +6,11 @@ interface ServiceCardProps {
 }
 
 export function ServiceCard({ service }: ServiceCardProps) {
+  const Icon = service.icon;
+
   return (
     <Card className="text-center flex flex-col items-center gap-4 h-full">
-      <div className="text-5xl md:text-6xl">{service.icon}</div>
+      <Icon className="w-12 h-12 md:w-14 md:h-14 text-white" strokeWidth={1.5} />
       <h3 className="text-lg md:text-xl font-bold text-[#FFD700] leading-tight">
         {service.title}
       </h3>

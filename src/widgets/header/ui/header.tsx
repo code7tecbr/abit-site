@@ -1,5 +1,8 @@
 import { Container } from "@/shared/ui";
 import { MobileMenu } from "@/features/mobile-menu";
+import IconAbit from "@/shared/images/icone.png";
+import IconAbitName from "@/shared/images/name.png";
+import IcontAbitTitle from "@/shared/images/titulo.png";
 
 const NAV_ITEMS = [
   { href: "#inicio", label: "INÍCIO" },
@@ -9,26 +12,38 @@ const NAV_ITEMS = [
   { href: "#contato", label: "CONTATO" },
 ];
 
+const logo= () => {
+  return (
+  <a href="#inicio" className="flex items-center">
+    <div className="w-12 flex items-center">
+      <img src={IconAbit.src} alt="ABIT Logo" className="w-8" />
+    </div>
+    <div className="flex flex-col">
+      <div className="">
+        <img
+          src={IconAbitName.src}
+          alt="ABIT Name"
+          className="h-8"
+        />
+      </div>
+      <div className="">
+        <img
+          src={IcontAbitTitle.src}
+          alt="ABIT Title"
+          className="h-3 mt-2"
+        />
+      </div>
+    </div>
+  </a>
+  );
+}
+
 export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-[#2A2A2A]">
       <Container>
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-2">
-            <div className="w-12 h-12 bg-gradient-to-br from-[#FFD700] to-[#FFC700] rounded-lg flex items-center justify-center font-bold text-black text-xl">
-              AB
-            </div>
-            <div className="flex flex-col">
-              <span className="text-[#FFD700] font-bold text-lg leading-tight">
-                ABIT
-              </span>
-              <span className="text-white text-xs">
-                Projetos & Engenharia
-              </span>
-            </div>
-          </a>
-
+          {logo()}
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
             {NAV_ITEMS.map((item) => (

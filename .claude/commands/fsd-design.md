@@ -1,0 +1,1 @@
+/home/wisley7l/.claude/agents/fsd-design.md
