@@ -28,7 +28,7 @@ export function AboutSection() {
             <MensagemCentral message="A ABIT PROJETOS & ENGENHARIA NASCE COM O INTUITO DE PROVER PROJETOS
               PERSONALIZADOS E SOLUÇÕES INOVADORAS COM EXCELÊNCIA." />
           </div>
-          <div className="flex  lg:flex-row flex-col p-5 gap-20">
+          <div className="flex  lg:flex-row flex-col-reverse p-5 gap-20">
             <MensagemCentral message="ACREDITAMOS EM UM NOVO CONCEITO DE ENGENHARIA E ASSESSORIA, ALIANDO
               TÉCNICA E HUMANISMO, ECONOMIA E SEGURANÇA, RESPONSABILIDADE E ÉTICA." />
             <BadageExecellencia />

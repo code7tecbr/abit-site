@@ -15,7 +15,7 @@ export default function Home() {
         <ServicesSection />
         <AboutSection />
         <MissionSection />
-        <NewsletterSection />
+        {/* <NewsletterSection /> */}
       </main>
       <Footer />
     </div>
