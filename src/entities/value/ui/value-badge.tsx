@@ -2,19 +2,23 @@ import type { CompanyValue } from "../model";
 
 interface ValueBadgeProps {
   value: CompanyValue;
+  isInverter?: boolean;
 }
 
-export function ValueBadge({ value }: ValueBadgeProps) {
+export function ValueBadge({ value, isInverter }: ValueBadgeProps) {
   const Icon = value.icon;
+  const divClass = isInverter
+    ? "h-32 w-32 z-0 rounded-full border-4 border-[#FFD700] flex items-center justify-end"
+    : "h-32 w-32 z-0 rounded-full border-4 border-[#FFD700] flex items-center justify-start";
+  const spanClass = isInverter
+    ? "mr-14 bg-black z-10 text-xl"
+    : "ml-14 bg-black z-10 text-xl";
 
   return (
-    <div className="flex flex-col items-center gap-4">
-      <div className="w-28 h-28 md:w-32 md:h-32 rounded-full border-2 border-[#FFD700] bg-black flex items-center justify-center">
-        <Icon className="w-10 h-10 md:w-12 md:h-12 text-white" strokeWidth={1.5} />
+    <div className="flex justify-center p-4">
+      <div className={divClass}>
+        <span className={spanClass}>{value.title}</span>
       </div>
-      <h3 className="text-lg md:text-xl font-bold text-[#FFD700]">
-        {value.title}
-      </h3>
     </div>
   );
 }
