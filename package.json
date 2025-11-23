@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint && steiger ./src"
+    "lint": "eslint && steiger ./src",
+    "deploy": "npx wrangler deploy --assets=./out"
   },
   "dependencies": {
     "lucide-react": "^0.554.0",
